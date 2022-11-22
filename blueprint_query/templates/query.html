@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query1 - Search</title>
+</head>
+<body>
+    <div>
+        <section>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href={{url_for('bp_query.menu_queries')}}>Вернуться в меню запросов</a></li>
+                        <li><a href={{url_for('exit_func')}}>Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            <form method="post" action="">
+                <input type="text" name="product_name" placeholder="{{ph_title}}">
+                <button type="submit"><img src='{{ url_for("static", filename="pictures/magnifier2.png") }}' alt="click"></button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

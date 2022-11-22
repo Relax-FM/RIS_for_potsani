@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{query_numb}} - Result</title>
+</head>
+<body>
+    <div>
+        <section>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href={{url_for('bp_query.menu_queries')}}>Вернуться в меню запросов</a></li>
+                        <li><a href={{url_for('exit_func')}}>Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            <div>
+                {% for i in schema %}
+                    <div>{{i}}</div>
+                {% endfor %}
+            </div>
+            {% for i in result %}
+                <div>
+                    {% for j in i %}
+                        <div>{{j}}</div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+    </div>
+</body>
+</html>

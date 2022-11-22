@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu queries</title>
+</head>
+<body>
+    <div>
+        <section>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href={{url_for('menu_choice')}}>Вернуться в меню</a></li>
+                        <li><a href={{url_for('exit_func')}}>Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <a href={{url_for('bp_query.query1')}}>Запрос №1</a>
+                    <a href={{url_for('bp_query.query2')}}>Запрос №2</a>
+                </div>
+                <div>
+                    <a href={{url_for('bp_query.query3')}}>Запрос №3</a>
+                    <a href={{url_for('bp_query.query4')}}>Запрос №4</a>
+                </div>
+                <div>
+                    <a href={{url_for('bp_query.query5')}}>Запрос №5</a>
+                    <a href={{url_for('bp_query.query6')}}>Запрос №6</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

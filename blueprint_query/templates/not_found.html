@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <div>
+         <section>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href={{url_for('bp_query.menu_queries')}}>Вернуться в меню запросов</a></li>
+                        <li><a href={{url_for('exit_func')}}>Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            <h1>Ошибка, ничего не найдено!</h1>
+            <div><a href="{{url_for('bp_query.query1')}}">Назад</a></div>
+        </section>
+    </div>
+</body>
+</html>
